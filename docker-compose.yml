@@ -1,0 +1,24 @@
+
+version: '1.0'
+
+services:
+  remote-labs:
+    build:
+      context: .
+    container_name: remote-labs
+    hostname: remote-labs
+    networks:
+      - mynet
+    ports:
+      - 8080:8080
+    expose:
+      - 8080:8080
+    environment:
+      APP_ENV: development
+      SYSTEM_PORT: 8080
+      SYSTEM_HOST: 0.0.0.0
+      LOGSTASH_ENDPOINT: logging.logstash-logstash:4560
+    deploy:
+      restart_policy:
+        condition: on-failure
+
