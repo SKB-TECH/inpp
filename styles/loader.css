@@ -1,0 +1,41 @@
+.container-loader {
+    background-color: #045174;
+    display: flex;
+    height: 100Vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    z-index: 10000;
+    animation: bgAnim 4s linear infinite ;
+    overflow: hidden;
+}
+
+.container-loader span{
+    color: #f47a71;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    margin-top: -30vh;
+    left: 45vw;
+}
+.cls-1{fill:none;}
+.cls-2{clip-path:url(#clip-path);}
+.dadanadaN *{
+    margin-left: -300px !important;
+}
+.container-loader .cls-3{
+    fill:#0092ff;
+    transform-origin: center;
+    animation: per1Anims 4s linear infinite ;
+}
+.container-loader .cls-4{fill:#ff9802;}
+.container-loader .logoImageSvg{
+    height: 70px;
+    width: 300px;
+}
+.loader-site{
+    width: 400px;
+}

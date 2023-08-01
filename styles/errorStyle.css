@@ -1,0 +1,17 @@
+.container-error{
+    height: calc(100vh + 0px);
+    background-color: #24304c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-error a{
+    color: #fff;
+    text-decoration: none;
+}
+.container-error a:hover{
+    color: #f47a71;
+}
