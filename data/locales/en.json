@@ -1,0 +1,102 @@
+{
+    "home": "Home",
+    "about": "About Us",
+    "team": "Our Team",
+    "contact": "Contact Us",
+    "Oeuvres": "Oeuvres",
+    "Autors": "Autors",
+    "Themes": "Themes",
+    "hero": {
+        "title1": "Top Digital Transformers",
+        "title2": "Technological Innovators +",
+        "subtitle": "We are committed to putting our expertise at a process of digital transformation and technological innovation to the service of campanies for a common good",
+        "CTA": "Contact us"
+    },
+    "section1": {
+        "title": "About us",
+        "subtitle1": "We are committed to putting our expertise at a process of digital transformation and technological innovation to the service of campanies for a common good.",
+        "subtitle2": "We are a custom software development company. We provide expertise for the entire project lifecycle, from gathering and defining requirements to executing projects to successful completion.",
+        "CTA": "Learn more"
+    },
+    "section2": {
+        "title": "Our Services",
+        "card1": {
+            "title": "PROVISION OF SOFTWARE SERVICES",
+            "details": "TECH-UPGRAD is a market leader in the areas of software development and deployment (Desktop, Web and Mobile) systems integration, software implementation, software support services and software enhancement and customization."
+        },
+        "card2": {
+            "title": "AGRO-TECH",
+            "details": "Consultation in the digitization and automation of Agricultural Services"
+        },
+        "card3": {
+            "title": "CTO AS A SERVICE",
+            "details": "your tech department managed by the pros."
+        },
+        "card4": {
+            "title": "IT & COMMUNITY MANAGEMENT SERVICE",
+            "details": "Presence on social networks, website, etc."
+        }
+    },
+    "section3": {
+        "title": "Fast",
+        "detail": "Remote Labs enables decision-makers to find the right candidates in a matter of minutes. No need for Applicant Tracking Systems, Job Boards, Hiring Managers, Recruitment Teams, and Sourcing Teams. The decentralized application will also handle payments and accounting activities."
+    },
+    "section4": {
+        "slide1": {
+            "title": "The Business Times",
+            "description": " \"The smartest product in the market\""
+        },
+        "slide2": {
+            "title": "Data Today",
+            "description": "\"The game changing app you'll need\""
+        }
+    },
+    "aboutPage":{
+        "title":{
+            "part1":"Know",
+            "part2":"More",
+            "part3":"About",
+            "part4":"Us"
+        },
+        "section1":{
+            "title": "What do you know about our COMPANY?",
+            "details": {
+                "part1": " Tech-Upgrad Company was created in 2022 by software engineer and very quickly established itself as         an engineering company solving digitalization problems of different sectors.",
+                "part2": "We are a custom software development company. We provide expertise for the entire project lifecycle, from gathering and defining requirements to executing projects to successful completion.",
+                "part3": "We specialize in Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Search Engines, Agri-tech."
+            }
+        },
+        "section2": {
+            "title": "COMPANY VISION",
+            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Agri-tech solutions."
+        }, 
+        "section3": {
+            "title":"COMPANY MISSION",
+            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Search Engines and Agri-tech solutions."
+        },
+        "section4":{
+            "title": "OUR FOCUS",
+            "description": "From a theoretical point of view, agrotechnology is the technology applied to the agricultural and livestock field, mainly because it provides the methods and machinery to optimize production, focusing on the processes used in the sector to give a more efficient use of natural and artificial resources."
+        }   
+    },
+    "teamPage":{
+        "title": {
+            "part1": "Our",
+            "part2": "Team"
+        },
+        "title2": "Our Team"
+    },
+    "contactPage":{
+        "title":{
+            "part1": "Do you have",
+            "part2":"Any questions?",
+            "part3":"Contact",
+            "part4": "US"
+        },
+        "form":{
+            "title": "Contact us",
+            "subtitle": "To schedule a meeting with one of our consultants, please fill in your contact details",
+            "btn": "Send"
+        }
+    }
+}

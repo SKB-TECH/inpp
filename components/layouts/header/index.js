@@ -11,6 +11,7 @@ import { FaUser } from "react-icons/fa";
 import { User } from "react-feather";
 import { Button } from "antd";
 import AccountDrawer from "../../elements/user/login";
+import logo from '../../../public/assets/logos/logo.jpg'
 
 const Header = () => {
 
@@ -66,13 +67,13 @@ const Header = () => {
                             <div className="logo-container">
                                 <Link href={"/"} className="logo-a">
                                     <Image
-                                        src={"assets/images/logos/i1.png"}
+                                        src={logo}
                                         alt="cover"
                                         className="logo-image"
-                                        width={30}
-                                        height={30}
+                                        width={600}
+                                        height={600}
                                         style={{
-                                            maxWidth: 80,
+                                            maxWidth: 200,
                                             // height: "auto"
                                         }} />
                                 </Link>
@@ -91,15 +92,6 @@ const Header = () => {
                                 <Link href="/oeuvres" className={`${isScroll ? "linkItem-light" : "linkItem"} 
                             ${location.pathname === "/oeuvres" ? "is-active" : ""}  `}>
                                     {messages['Oeuvres']}
-                                </Link>
-                                <Link href="/autors" className={`${isScroll ? "linkItem-light" : "linkItem"} 
-                            ${location.pathname === "/autors" ? "is-active" : ""}  `}>
-                                    {messages['Autors']}
-                                </Link>
-
-                                <Link href="/themes" className={`${isScroll ? "linkItem-light" : "linkItem"} 
-                            ${location.pathname === "/themes" ? "is-active" : ""}  `}>
-                                    {messages['Themes']}
                                 </Link>
                                 <IntlDropdown />
                             </div>

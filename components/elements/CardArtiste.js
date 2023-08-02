@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import icon from '../../public/assets/images/iconphoto.jpg'
 
 function Card_Artiste({names,domaine}) {
   return (
@@ -8,7 +9,7 @@ function Card_Artiste({names,domaine}) {
       data-aos="flip-right"
     >
       <Image
-        src={'/iconphoto.jpg'}
+        src={icon}
         width={150}
         height={150}
         className="rounded-full border-vert_25 border-2"

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { useRouter } from 'next/navigation';
 import UserFormData from './UserForm'
-//@ts-ignore
+
 function AccountDrawer({ open, onClose }) {
 
     return (

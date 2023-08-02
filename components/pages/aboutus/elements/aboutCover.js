@@ -15,7 +15,7 @@ const AboutCover = () => {
                     <Row className="container d-flex justify-content-start ">
                         <div className="col-12 col-md-12 d-flex justify-content-start d-lg-none d-xl-none border-bottom  mb-4 pt-4">
                                 <Image
-                                    src="assets/images/covers/11b.png"
+                                    src="/assets/images/covers/11b.png"
                                     alt="cover"
                                     className="cover_home_mobile "
                                     width={50}
@@ -37,7 +37,7 @@ const AboutCover = () => {
             <div className="col-12 col-lg-4 col-xl-4  d-none d-lg-flex d-xl-flex justify-content-end align-items-end  pt-xl-2 pt-lg-2 ">
 
                     <Image
-                        src="assets/images/covers/11b.png"
+                        src="/assets/images/covers/11b.png"
                         alt="cover"
                         className="cover_img  "
                         width={50}

@@ -12,7 +12,7 @@ const Section3 = () => {
           </p>
         </div>
         <div className='w-[98%] h-[30rem] lg:w-1/2 rounded-lg p-2 -mt-32 lg:mt-0'>
-            <Image src={'gal5.jpg'} className='min-w-full rounded-lg' width={500} height={400} alt={'picture'}/>
+            <Image src={'/gal5.jpg'} className='min-w-full rounded-lg' width={500} height={400} alt={'picture'}/>
         </div>
     </section>
   )

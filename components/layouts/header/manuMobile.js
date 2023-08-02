@@ -10,7 +10,7 @@ const ManuMobile = ({close}) => {
                     <div className="logo-container-m col-9">
                         <Link href={"/"} className=" logo-a">
                             <Image
-                                src={ "assets/images/logos/i3.png"}
+                                src={ "/assets/logos/logo.jpg"}
                                 alt="cover"
                                 className="logo-image"
                                 width={50}
@@ -39,22 +39,13 @@ const ManuMobile = ({close}) => {
                             About Us
                         </Link>
                         <div className="col-12 border-bottom" />
-                        <Link href="/team"
-                              className={`linkItem-light  ${location.pathname==="/team" ? "is-active": ""}`}
+                        <Link href="/oeuvres"
+                              className={`linkItem-light  ${location.pathname==="/oeuvres" ? "is-active": ""}`}
                               onClick={close}
                         >
-                            Our team
+                            Oeuvres
                         </Link>
-                        <div className="col-12 border-bottom" />
-                        <Link href="/contact" className={`linkItem-light 
-                         ${location.pathname==="/contact" ? "is-active": ""}
-                        `}
 
-                              onClick={close}
-                        >
-                            Contact us
-                        </Link>
-                        <div className="col-12 border-bottom" />
 
                     </div>
 

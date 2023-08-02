@@ -32,8 +32,8 @@ const Footer=()=>{
                     <div className="">
                         <h5>Contact</h5>
                         <div className="d-flex flex-column ">
-                            <Link href="tel://+352661611377" target="_blank" className="footer_link"> +243 977423201</Link>
-                            <Link href="mailto://danielclaudiustoica@yahoo.com" target="_blank" className="footer_link"> isquare@gmail.com</Link>
+                            <Link href="#" target="_blank" className="footer_link"> +243 977423201</Link>
+                            <Link href="mailto://danielclaudiustoica@yahoo.com" target="_blank" className="footer_link"> Arweave</Link>
                         </div>
                     </div>
 

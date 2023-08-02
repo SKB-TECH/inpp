@@ -1,0 +1,102 @@
+{
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "team": "Notre équipe",
+    "contact": "Contactez-nous",
+    "Oeuvres": "Oeuvres",
+    "Autors": "Auteurs",
+    "Themes": "Themes",
+    "hero": {
+        "title1": "Meilleurs transformateurs numériques",
+        "title2": "Innovateurs technologiques +",
+        "subtitle": "Nous nous engageons à mettre notre expertise dans un processus de transformation numérique et d'innovation technologique au service des entreprises pour un bien commun.",
+        "CTA": "Contactez-nous"
+    },
+    "section1": {
+        "title": "Qui sommes-nous ?",
+        "subtitle1": "Nous nous engageons à mettre notre expertise dans un processus de transformation digitale et d'innovation technologique au service des entreprises pour un bien commun.",
+        "subtitle2": "Nous sommes une société de développement de logiciels personnalisés. Nous fournissons une expertise pour l'ensemble du cycle de vie du projet, de la collecte et de la définition des besoins à l'exécution des projets jusqu'à leur achèvement.",
+        "CTA": "En savoir plus"
+    },
+    "section2": {
+        "title": "Nos services",
+        "card1": {
+            "title": "LA FOURNITURE DE SERVICES LOGICIELS",
+            "details": "TECH-UPGRAD est un leader du marché dans les domaines du développement et du déploiement de logiciels (Desktop, Web et Mobile), de l'intégration de systèmes, de la mise en œuvre de logiciels, des services d'assistance logicielle et de l'amélioration et de la personnalisation de logiciels."
+        },
+        "card2": {
+            "title": "AGRO-TECH",
+            "details": "Consultation sur la numérisation et l'automatisation des services agricoles"
+        },
+        "card3": {
+            "title": "LE CTO EN TANT QUE SERVICE",
+            "details": "votre service technique géré par des professionnels."
+        },
+        "card4": {
+            "title": "IT & COMMUNITY MANAGEMENT SERVICE",
+            "details": "Présence sur les réseaux sociaux, le site web, etc."
+        }
+    },
+    "section3": {
+        "title": "Rapide",
+        "detail": "Remote Labs permet aux décideurs de trouver les bons candidats en quelques minutes. Plus besoin de systèmes de suivi des candidats, de tableaux d'affichage, de responsables de l'embauche, d'équipes de recrutement et d'équipes de sourcing. L'application décentralisée s'occupera également des paiements et des activités comptables."
+    },
+    "section4": {
+        "slide1": {
+            "title": "The Business Times",
+            "description": " \"Le produit le plus intelligent du marché\""
+        },
+        "slide2": {
+            "title": "Data Today",
+            "description": "\"L'application qui change la donne dont vous avez besoin\""
+        }
+    },"aboutPage":{
+        "title":{
+            "part1":"Savoir",
+            "part2":"Plus",
+            "part3":"Sur",
+            "part4":"Nous"
+        },
+        "section1":{
+            "title": "Que savez-vous de notre entreprise ?",
+            "details": {
+                "part1": "La société Tech-Upgrad a été créée en 2022 par un ingénieur en informatique et s'est très vite imposée comme une société d'ingénierie résolvant les problèmes de numérisation de différents secteurs.",
+                "part2": "Nous sommes une société de développement de logiciels personnalisés. Nous fournissons une expertise pour l'ensemble du cycle de vie du projet, de la collecte et de la définition des besoins à l'exécution des projets jusqu'à leur achèvement.",
+                "part3": "Nous sommes spécialisés dans les solutions Big Data et Cloud, l'IOT, les systèmes d'information géographique et la cartographie, la recherche d'informations et les moteurs de recherche, l'Agri-tech."
+            }
+        },
+        "section2": {
+            "title": "COMPANY VISION",
+            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Agri-tech solutions."
+        }, 
+        "section3": {
+            "title":"VISION DE L'ENTREPRISE",
+            "description": "Notre vision est de devenir la première et la plus grande entreprise informatique à fournir des solutions Big Data et Cloud, IOT, des systèmes d'information géographique et de cartographie, des moteurs de recherche et de récupération d'informations et des solutions Agri-tech."
+        },
+        "section4":{
+            "title": "NOS PRIORITÉS",
+            "description": "D'un point de vue théorique, l'agrotechnologie est la technologie appliquée au domaine de l'agriculture et de l'élevage, principalement parce qu'elle fournit les méthodes et les machines permettant d'optimiser la production, en se concentrant sur les processus utilisés dans le secteur pour permettre une utilisation plus efficace des ressources naturelles et artificielles."
+        }   
+    },
+    "teamPage":{
+        "title": {
+            "part1": "Notre",
+            "part2": "Notre Equipe"
+        },
+        "title2": "Notre Equipe"
+    },
+    "contactPage":{
+        "title":{
+            "part1": "Avez-vous",
+            "part2":"Des questions ?",
+            "part3":"Contactez-",
+            "part4": "Nous"
+        },
+        "form":{
+            "title": "Contactez-nous",
+            "subtitle": "Pour prendre rendez-vous avec l'un de nos consultants, veuillez remplir vos coordonnées.",
+            "btn": "Envoyer"
+        }
+    }
+
+}
