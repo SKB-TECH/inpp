@@ -4,7 +4,7 @@ import Image from "next/image";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { AiOutlineLogout } from 'react-icons/ai'
-import { BsFillGrid3X3GapFill } from 'react-icons/bs'
+import { BsFillGrid3X3GapFill,BsFillSignpostSplitFill} from 'react-icons/bs'
 import { FaUsersCog } from 'react-icons/fa';
 import { SlSettings } from 'react-icons/sl'
 
@@ -25,7 +25,10 @@ const SidebarOeuvre = () => {
                         <span className='mt-1'><FaUsersCog className='text-orange-600' size={20} /></span>
                         <Link href="/users" className='ml-2 mt-1 hover:text-white'>Artits</Link>
                     </li>
-                    
+                    <li className='flex m-1 cursor-pointer border-transparent hover:bg-orange hover:text-white border-2 p-2 rounded-xl'>
+                        <span className='mt-1'><BsFillSignpostSplitFill className='text-orange-600' size={20} /></span>
+                        <Link href="/posts" className='ml-2 mt-1 hover:text-white'>New Art</Link>
+                    </li>
                 </ul>
             </div>
             <hr></hr>
