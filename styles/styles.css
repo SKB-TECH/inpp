@@ -1323,7 +1323,7 @@ color: #ffffff !important;
     .card {
         @apply
             bg-white text-gray-700
-            w-96 min-h-[8rem]
+            w-80 min-h-[4rem]
             shadow-lg rounded-md overflow-hidden
     }
 
@@ -1364,6 +1364,7 @@ color: #ffffff !important;
     .drop{
         @apply
          bg-white
+         w-full
          h-10
          outline-none border p-2  rounded-lg text-gray-700
     }

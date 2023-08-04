@@ -28,9 +28,9 @@ const UserFormData = () => {
         // wrapperCol={{ span: 14 }}
         layout="vertical"
         // disabled={true}
-        className=' p-4 border rounded-md flex flex-col '
+        className=' p-4 border rounded-md flex flex-col w-full'
       >
-        <Form.Item label="Username ">
+        <Form.Item label="Username " className="w-full">
           <Input />
         </Form.Item>
         <Form.Item label="Password ">

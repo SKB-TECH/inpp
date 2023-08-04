@@ -95,9 +95,9 @@ const Header = () => {
                                 </Link>
                                 <IntlDropdown />
                             </div>
-                            <div>
+                            {/* <div>
                                 <Button icon={<User/>}   onClick={handleAccountDrawer}/>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="d-block d-lg-none d-xl-none" >
                             <button className="btn btn-menu" data-testid="open-menu" onClick={openMenuHandel}>

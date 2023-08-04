@@ -8,7 +8,7 @@ function AccountDrawer({ open, onClose }) {
     return (
         <>
 
-            <Drawer title="Mon Compte " placement="right" onClose={onClose} open={open} className='p-2' width={350}>
+            <Drawer title="New Artist" placement="right" onClose={onClose} open={open} className='p-2' width={550}>
                 <div className='flex flex-col gap-2 items-center justify-center'>
                     <h3 className='text-base font-semibold'></h3>
                     <p className=' text-justify text-sm font-semibold text-gray-600 '>
