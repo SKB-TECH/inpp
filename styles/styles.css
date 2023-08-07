@@ -515,11 +515,11 @@ ul{
 }
 .logo-image{
     height: 40px;
-    width: auto;
+    width: 40px;
 }
 .logo-image-footer{
     height: 50px;
-    width: auto;
+    width: 50px;
 }
 .container-layer{
     min-height: 120vh;
@@ -1335,7 +1335,7 @@ color: #ffffff !important;
     
     .art_title{
         @apply
-        text-xl font-semibold overflow-ellipsis overflow-hidden whitespace-nowrap
+        lg:text-xl font-semibold overflow-ellipsis overflow-hidden whitespace-nowrap text-lg
         hover:cursor-pointer
     }
 

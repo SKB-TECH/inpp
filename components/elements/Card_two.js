@@ -12,7 +12,7 @@ export default function Card_two({images}) {
               <span className='badge'>Ctg. City</span>
               <span className='badge'>DrCongo</span>
           </div>
-          <h2 className='art_title'>Woman Africa</h2>
+          <span className='art_title'>Woman Africa</span>
           <div>
               <span className='text-xl text-bold'>4000 $</span>
               <div className='flex items-center gap-2 mt-1'>
