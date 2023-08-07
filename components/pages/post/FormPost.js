@@ -42,6 +42,17 @@ const Editeur = ({offreInput, setOffreInput, handlIsValid}) => {
                 <span className="text-gray-600 ">{"Applies to Country"}</span>
                 <CountryDropdown classes='drop' value={country}  onChange={(val) => setCountry(val)}/>
             </Form.Item>
+            <Form.Item name={'City'} rules={[{required: true, message: 'Veuillez completer ce champ !!!'}]}>
+                <span className="text-gray-600 ">{"City "}</span>
+                <Input
+                    size="large"
+                    // options={jobs}
+                    className="mb-1"
+                    onChange={(value) => {
+                        setOffreInput({...offreInput, city: value})
+                    }}
+                />
+            </Form.Item>
             <Form.Item name={'description'} rules={[{required: true, message: ''}]}>
                 <div>
                     <span className="text-gray-600 ">{"Tell us about Art"}</span>

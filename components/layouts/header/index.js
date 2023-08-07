@@ -74,7 +74,7 @@ const Header = () => {
                                         height={600}
                                         style={{
                                             maxWidth: 200,
-                                            // height: "auto"
+                                            height: "auto"
                                         }} />
                                 </Link>
                             </div>
@@ -93,16 +93,10 @@ const Header = () => {
                             ${location.pathname === "/oeuvres" ? "is-active" : ""}  `}>
                                     {messages['Oeuvres']}
                                 </Link>
+                                {/* Add action to connect wallet of user */}
+                                <button className="button-primary">Connect Wallet</button>
                                 <IntlDropdown />
                             </div>
-                            {/* <div>
-                                <Button icon={<User/>}   onClick={handleAccountDrawer}/>
-                            </div> */}
-                        </div>
-                        <div className="d-block d-lg-none d-xl-none" >
-                            <button className="btn btn-menu" data-testid="open-menu" onClick={openMenuHandel}>
-                                <Menu color={"#B64377"} size={40} />
-                            </button>
                         </div>
                     </div>
                 </div>

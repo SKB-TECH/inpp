@@ -46,7 +46,7 @@ const ManuMobile = ({close}) => {
                             Oeuvres
                         </Link>
 
-
+                        <button className="button-primary">Connect Wallet</button>
                     </div>
 
                 </div>
