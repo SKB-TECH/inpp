@@ -12,6 +12,7 @@ import { User } from "react-feather";
 import { Button } from "antd";
 import AccountDrawer from "../../elements/user/login";
 import logo from '../../../public/assets/logos/logo.jpg'
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Header = () => {
 
@@ -94,7 +95,8 @@ const Header = () => {
                                     {messages['Oeuvres']}
                                 </Link>
                                 {/* Add action to connect wallet of user */}
-                                <button className="button-primary">Connect Wallet</button>
+                                {/* <button className="button-primary">Connect Wallet</button> */}
+                                <ConnectButton showBalance={true}  />
                                 <IntlDropdown />
                             </div>
                         </div>

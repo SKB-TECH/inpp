@@ -7,10 +7,11 @@ import {
     HomeSectionOne,
     HomeSectionTwo
 } from "../components/pages/home/elements";
+
 import Footer from "../components/layouts/footer";
 import Head from "next/head";
- 
 const Home = () => {
+
     return (
         <React.Fragment>
             <Head>

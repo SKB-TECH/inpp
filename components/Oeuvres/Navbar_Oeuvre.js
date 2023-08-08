@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {MdMessage} from 'react-icons/md'
 import {IoMdNotificationsOutline} from 'react-icons/io'
 import {BiLogOutCircle} from "react-icons/bi";
-
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 const NavbarOeuvre= () => {
     const [isScroll, setIsScroll] = useState(false);
     const listenScrollEvent = () => {

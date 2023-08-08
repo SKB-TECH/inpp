@@ -26,6 +26,11 @@ body{
     --weight1: 200;
     --weight2: 400;
     --weight3: 600;
+    --background: #181818;
+	--primary: #67d4dd;
+	--secondary: #c9fd5c;
+	--text: #ffffff;
+	--errorText: #ff0000;
 }
 a{
     text-decoration: none !important;
