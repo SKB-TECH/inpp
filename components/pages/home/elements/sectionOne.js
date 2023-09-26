@@ -5,9 +5,9 @@ function SectionOne() {
   return (
     <section className="flex flex-col lg:flex-row flex-wrap justify-around items-center
      min-w-full min-h-full  mt-20 mb-10 gap-10">
-      <CardOne image={'/gal6.jpg'} title={'Best art of the month'}/>
-      <CardOne image={'/gal5.jpg'} title={'Oeuvre chere'}/>
-      <CardOne image={'/gal2.jpg'} title={'summer sales'}/>
+      <CardOne image={'/gorille11.jpg'} title={'Gorille de Montangne'}/>
+      <CardOne image={'/gorille9.jpg'} title={'Gorille plus recherche'}/>
+      <CardOne image={'/gorille5.jpg'} title={'Gorille de plus visite'}/>
     </section>
   )
 }

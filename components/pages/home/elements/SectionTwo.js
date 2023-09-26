@@ -48,10 +48,10 @@ const SectionTwo = () => {
         <div className='w-[100%] lg:w-[95%]  mt-20 '>
           <div className='p-2 flex flex-col min-w-full lg:text-4xlmin-h-full mb-10 justify-around items-center text-2xl font-bold'>News of the month</div>
         <Slider {...settings}>
-         <Card_two images={'/12.jpeg'}/>
-         <Card_two images={'/15.jpeg'}/>
-         <Card_two images={'/16.jpeg'}/>
-         <Card_two images={'/10.jpeg'} />
+         <Card_two images={'/gorille12.jpg'}/>
+         <Card_two images={'/gorille13.jpg'}/>
+         <Card_two images={'/gorille7.jpg'}/>
+         <Card_two images={'/gorille8.jpg'} />
         </Slider>
         
         </div>
