@@ -60,18 +60,18 @@
         "section1":{
             "title": "Que savez-vous de notre entreprise ?",
             "details": {
-                "part1": "La société Tech-Upgrad a été créée en 2022 par un ingénieur en informatique et s'est très vite imposée comme une société d'ingénierie résolvant les problèmes de numérisation de différents secteurs.",
+                "part1": "Hadisi yetu est un start-up des developpeurs de la communaute arweave RDC qui travaillent ensemble pour aider les moyennes et petites entreprises a se doter des outils necessaire de la nouvelle technologie ",
                 "part2": "Nous sommes une société de développement de logiciels personnalisés. Nous fournissons une expertise pour l'ensemble du cycle de vie du projet, de la collecte et de la définition des besoins à l'exécution des projets jusqu'à leur achèvement.",
                 "part3": "Nous sommes spécialisés dans les solutions Big Data et Cloud, l'IOT, les systèmes d'information géographique et la cartographie, la recherche d'informations et les moteurs de recherche, l'Agri-tech."
             }
         },
         "section2": {
             "title": "COMPANY VISION",
-            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Agri-tech solutions."
+            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval"
         }, 
         "section3": {
             "title":"VISION DE L'ENTREPRISE",
-            "description": "Notre vision est de devenir la première et la plus grande entreprise informatique à fournir des solutions Big Data et Cloud, IOT, des systèmes d'information géographique et de cartographie, des moteurs de recherche et de récupération d'informations et des solutions Agri-tech."
+            "description": "Notre vision est de devenir la première et la plus grande entreprise informatique à fournir des solutions Big Data et Cloud, IOT, des systèmes d'information géographique et de cartographie, des moteurs de recherche et de récupération d'informations"
         },
         "section4":{
             "title": "NOS PRIORITÉS",

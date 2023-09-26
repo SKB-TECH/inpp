@@ -11,7 +11,7 @@ import { FaUser } from "react-icons/fa";
 import { User } from "react-feather";
 import { Button } from "antd";
 import AccountDrawer from "../../elements/user/login";
-import logo from '../../../public/assets/logos/logo.jpg'
+import logo from '../../../public/assets/logos/logoblk.jpg'
 
 const Header = () => {
 
@@ -70,12 +70,9 @@ const Header = () => {
                                         src={logo}
                                         alt="cover"
                                         className="logo-image"
-                                        width={600}
-                                        height={600}
-                                        style={{
-                                            maxWidth: 200,
-                                            height: "auto"
-                                        }} />
+                                        width={700}
+                                        height={700}
+                                        />
                                 </Link>
                             </div>
                         </div>
@@ -89,12 +86,9 @@ const Header = () => {
                             ${location.pathname === "/aboutus" ? "is-active" : ""}  `}>
                                     {messages['about']}
                                 </Link>
-                                <Link href="/oeuvres" className={`${isScroll ? "linkItem-light" : "linkItem"} 
-                            ${location.pathname === "/oeuvres" ? "is-active" : ""}  `}>
-                                    {messages['Oeuvres']}
-                                </Link>
-                                {/* Add action to connect wallet of user */}
-                                <button className="button-primary">Connect Wallet</button>
+                                <button className="button-primary" onClick={handleMenuDrawer}>
+                                    Connexion
+                                </button>
                                 <IntlDropdown />
                             </div>
                         </div>
