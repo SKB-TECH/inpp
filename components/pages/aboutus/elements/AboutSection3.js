@@ -14,8 +14,8 @@ const AboutSection3 = () => {
                             <div className="image-container-2">
                                 <Image
                                     placeholder="blur"
-                                    blurDataURL="assets/images/covers/b.jpg"
-                                    src="assets/images/covers/34.jpg"
+                                    blurDataURL="/public/gal3.jpg"
+                                    src="/public/gal3.jpg"
                                     alt="suppe"
                                     className="img-fluid-site boreder-site image-2"
                                     fill
@@ -47,8 +47,8 @@ const AboutSection3 = () => {
                             <div className="image-container-2">
                                 <Image
                                     placeholder="blur"
-                                    blurDataURL="assets/images/covers/b.jpg"
-                                    src="assets/images/covers/35.png"
+                                    blurDataURL="/public/gal3.jpg"
+                                    src="/public/gal3.jpg"
                                     alt="suppe"
                                     className="img-fluid-site boreder-site image-2"
                                     fill
@@ -71,8 +71,8 @@ const AboutSection3 = () => {
                             <div className="image-container-2">
                                 <Image
                                     placeholder="blur"
-                                    blurDataURL="assets/images/covers/b.jpg"
-                                    src="assets/images/covers/35.png"
+                                    blurDataURL="/gal3.jpg"
+                                    src="/gal3.jpg"
                                     alt="suppe"
                                     className="img-fluid-site boreder-site image-2"
                                     fill

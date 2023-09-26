@@ -61,14 +61,14 @@
         "section1":{
             "title": "What do you know about our COMPANY?",
             "details": {
-                "part1": " Tech-Upgrad Company was created in 2022 by software engineer and very quickly established itself as         an engineering company solving digitalization problems of different sectors.",
+                "part1": " Hadisi yetu is a start-up of developers from the arweave DRC community who work together to help medium and small businesses acquire the necessary tools for new technology.",
                 "part2": "We are a custom software development company. We provide expertise for the entire project lifecycle, from gathering and defining requirements to executing projects to successful completion.",
                 "part3": "We specialize in Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Search Engines, Agri-tech."
             }
         },
         "section2": {
             "title": "COMPANY VISION",
-            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval and Agri-tech solutions."
+            "description": "Our vision is to become the first and biggest IT Company to provide Big Data and Cloud solutions, IOT, Geographic Information Systems and Mapping, Information Retrieval."
         }, 
         "section3": {
             "title":"COMPANY MISSION",

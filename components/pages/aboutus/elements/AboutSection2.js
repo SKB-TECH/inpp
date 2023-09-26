@@ -13,8 +13,8 @@ return (
                     <div className="image-container-2">
                         <Image
                             placeholder="blur"
-                            blurDataURL="assets/images/covers/b.jpg"
-                            src="assets/images/covers/33.jpg"
+                            blurDataURL="/gal5.jpg"
+                            src="/gal5.jpg"
                             alt="suppe"
                             className="img-fluid-site boreder-site image-2"
                             fill
@@ -35,8 +35,8 @@ return (
                     <div className="image-container-2">
                         <Image
                             placeholder="blur"
-                            blurDataURL="assets/images/covers/b.jpg"
-                            src="assets/images/covers/33.jpg"
+                            blurDataURL="/gal3.jpg"
+                            src="/gal3.jpg"
                             alt="suppe"
                             className="img-fluid-site boreder-site image-2"
                             fill

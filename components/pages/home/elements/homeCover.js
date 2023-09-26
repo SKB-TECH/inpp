@@ -3,9 +3,9 @@ import React, { useContext } from "react";
 import Swiper from "react-id-swiper";
 import { IntlContext } from "../../../../context/Internationalization";
 import Image from "next/image";
-import gal1 from '../../../../public/gal1.jpg'
-import gal2 from '../../../../public/gal2.jpg'
-import gal3 from '../../../../public/gal3.jpg'
+import gal1 from '../../../../public/gorille3.jpg'
+import gal2 from '../../../../public/gorille5.jpg'
+import gal3 from '../../../../public/gorille6.jpg'
 const HomeCover = () => {
 
     const params = {

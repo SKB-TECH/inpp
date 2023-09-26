@@ -14,15 +14,15 @@ const Home = () => {
     return (
         <React.Fragment>
             <Head>
-                <title>Hadisi Yetu| Home </title>
+                <title>Pnkb | Drc</title>
                 <meta
                     name="description"
                     content="We are committed to putting our expertise at a process of digital transformation and technological innovation to the service of campanies for a common good."
                 />
-                <meta property="og:URL" content="https://hadisi-yetu.com" />
+               
                 <meta
                     property="og:title"
-                    content="Hadisi-Yetu | Home"
+                    content="Pnkb | Drc"
                 />
             
                 <meta
@@ -37,7 +37,6 @@ const Home = () => {
             <HomeSectionTwo />
             <HomeSection3 />
             <HomeSection4 />
-            <HomeSection5 />
             <Footer />
         </React.Fragment>
     );

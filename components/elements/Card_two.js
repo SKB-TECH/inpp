@@ -10,28 +10,28 @@ export default function Card_two({images}) {
         <div className='p-3 flex flex-col gap-3'>
           <div className="flex items-center gap-2">
               <span className='badge'>Ctg. City</span>
-              <span className='badge'>DrCongo</span>
+              <span className='badge'>Bukavu</span>
           </div>
-          <span className='art_title'>Woman Africa</span>
-          <div>
+          {/* <span className='art_title'>Woman Africa</span>
+          {/* <div>
               <span className='text-xl text-bold'>4000 $</span>
               <div className='flex items-center gap-2 mt-1'>
                 <span className="text-sm line-through opacity-50">Rp 4000 $</span>
                 <span className="discount-percent">Save 20%</span>
               </div>
-          </div>
+          </div> */}
           <span className="flex items-center mt-1">
             <AiFillStar size={25} color={'#e3744a'}/>
             <AiFillStar size={25} color={'#e3744a'}/>
             <AiFillStar size={25} color={'#e3744a'}/>
             <AiFillStar size={25} color={'#e3744a'}/>
             <AiOutlineStar size={25} color={'#e3744a'}/>
-            <span className={'ml-2 text-lg text-gray-500'}>20K views</span>
+            {/* <span className={'ml-2 text-lg text-gray-500'}>20K visite/annee</span> */}
           </span>
           {/* action */}
           <div className={'mt-2 flex gap-3'}>
               <button className="button-primary">
-                 Buy Now
+                 Visiter
               </button>
               <button className='button-icon'>
                 <AiFillHeart size={25} className='opacity-50'/>
