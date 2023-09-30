@@ -11,14 +11,15 @@ import { FaUser } from "react-icons/fa";
 import { User } from "react-feather";
 import { Button } from "antd";
 import AccountDrawer from "../../elements/user/login";
-import logo from '../../../public/assets/logos/logoblk.jpg'
+import logo from '../../../public/assets/logos/logoblk.jpg';
+import ConnexionForm from "@/components/elements/ConnexionForm";
 
 const Header = () => {
 
     const [openAccount, setOpenAccount] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
     const [openSearch, setOpenSearch] = useState(false);
-
+    const [openForm,setopenForm]=useState(false)
     const handleAccountDrawer = () => {
         setOpenAccount(!openAccount);
     };
@@ -86,16 +87,16 @@ const Header = () => {
                             ${location.pathname === "/aboutus" ? "is-active" : ""}  `}>
                                     {messages['about']}
                                 </Link>
-                                <button className="button-primary" onClick={handleMenuDrawer}>
+                                <Button className="button-primary" onClick={()=>setopenForm(true)}>
                                     Connexion
-                                </button>
+                                </Button>
                                 <IntlDropdown />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <AccountDrawer open={openAccount}  onClose={handleAccountDrawer}  />
+            <ConnexionForm opens={openForm}  setOpens={setopenForm}/>
         </>
     )
 }

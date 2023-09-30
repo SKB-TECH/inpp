@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import {AiFillStar,AiOutlineStar,AiFillHeart,AiFillEye} from 'react-icons/ai'
-export default function Card_two({images}) {
+import {AiFillStar,AiOutlineStar,AiFillHeart,AiFillEye} from 'react-icons/ai'; 
+import DemandeForm from './demandeForm';
+export default function Card_two({images}) { 
+  const [open,setOpen]=React.useState(false)
   return (
     <div className='card'>
         <div className='w-full h-60'>
@@ -30,16 +32,17 @@ export default function Card_two({images}) {
           </span>
           {/* action */}
           <div className={'mt-2 flex gap-3'}>
-              <button className="button-primary">
+              <button className="button-primary" onClick={()=>setOpen(true)}>
                  Visiter
               </button>
               <button className='button-icon'>
                 <AiFillHeart size={25} className='opacity-50'/>
                 <span>20K</span>
               </button>
-              <button className='button-icon'>
+              <button className='button-icon' >
                 <AiFillEye size={25} className='opacity-50'/>
               </button>
+              <DemandeForm opens={open} setOpens={setOpen}/>
           </div>
         </div>
     </div>
