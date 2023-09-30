@@ -28,7 +28,6 @@ const auth=async()=>{
       setLoading(false);
       setOpens(false)
       stockageData('islog',true)
-      stockageData('token',data.data);
     }
     else{
         stockageData('isExist',!is)
