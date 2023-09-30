@@ -13,8 +13,8 @@ const AboutSectionOne = () => {
                         <div className="image-container-2">
                             <Image
                                 placeholder="blur"
-                                blurDataURL="/gal3.jpg"
-                                src="/gal3.jpg"
+                                blurDataURL="/gorille3.jpg"
+                                src="/gorille3.jpg"
                                 alt="suppe"
                                 className="img-fluid-site boreder-site image-2"
                                 fill
@@ -23,21 +23,12 @@ const AboutSectionOne = () => {
                     </div>
                     <div className="col-12 col-lg-6 col-xl-6 mt-5 mt-xl-0 mt-lg-0">
                         <h4 className="text-site">
-                            {messages['aboutPage'].section1.title}
+                            Que savez-vous de PNKB ?
                         </h4>
                         <p className="text-justify text-site2">
-                            {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            {messages['aboutPage'].section1.details.part1}
-
+                        Kahuzi Biega est un parc national situé dans la province du Sud-Kivu en République démocratique du Congo. Il est connu pour abriter le gorille des montagnes, une espèce en voie de disparition, ainsi que d'autres espèces animales et végétales rares. Le parc est inscrit sur la liste du patrimoine mondial de l'UNESCO depuis 1980.
                         </p>
-                        <p className="text-justify text-site2">
-                            {messages['aboutPage'].section1.details.part2}
-
-                        </p>
-                        <p className="text-justify text-site2">
-                            {messages['aboutPage'].section1.details.part3}
-
-                        </p>
+                      
                     </div>
 
 

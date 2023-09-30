@@ -105,7 +105,7 @@ const Editeur = ({offreInput, setOffreInput, handlIsValid}) => {
                     // options={jobs}
                     className="mb-1 w-full h-10 bg-orange text-white mt-2 font-bold rounded-lg"
                     placeholder="Post"
-                >Sell My Art</button>
+                >Envoyer Ma proposition</button>
             </Form.Item>
         </Form>
   );

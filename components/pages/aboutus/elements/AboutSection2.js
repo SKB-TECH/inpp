@@ -24,19 +24,18 @@ return (
 
                 <div className="col-12 col-lg-6 col-xl-6 mt-5 mt-xl-0 mt-lg-0">
                     <h4 className="text-site">
-                    {messages['aboutPage'].section2.title}
+                        Vision de PNKB
                     </h4>
                     <p className="text-justify text-site2">
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    {messages['aboutPage'].section2.description}
+                    Développer un nouveau paradigme et de transformer un lourd passé d’injustices à l’encontre des peuples indigènes en un modèle de conservation efficace basé sur les droits humains
                     </p>
                 </div>
                 <div className="col-12 pt-3 pt-lg-0 pt-xl-0 col-lg-6 col-xl-6 align-items-md-end justify-content-md-center d-none d-xl-flex d-lg-flex ">
                     <div className="image-container-2">
                         <Image
                             placeholder="blur"
-                            blurDataURL="/gal3.jpg"
-                            src="/gal3.jpg"
+                            blurDataURL="/gorille6.jpg"
+                            src="/gorille6.jpg"
                             alt="suppe"
                             className="img-fluid-site boreder-site image-2"
                             fill

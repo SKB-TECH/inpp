@@ -15,4 +15,32 @@ export const items = [
       caption: 'Slide 3',
     },
   ];
-  
+  export const demande=[{
+    id: 1,
+    noms: 'Benjamin Shako',
+    email: 'benjamin@rootech-drc.com',type:"Visite scientifique",description:"Pour permetre aux eleve de notre dev visite le parc"
+  },
+  {
+    id: 2,
+    noms: 'Doddy Matabaro',
+    email: 'Doddy Matabaro@rootech-drc.com',type:"Visite personnel",description:"Pour visite le parc"
+  },
+  {
+    id: 3,
+    noms: 'Emmanuel',
+    email: 'Doddy Matabaro@rootech-drc.com',type:"Visite personnel",description:"Pour visite le parc"
+  },{
+    id: 4,
+    noms: 'Benjamin Shako',
+    email: 'benjamin@rootech-drc.com',type:"Visite scientifique",description:"Pour permetre aux eleve de notre dev visite le parc"
+  },
+  {
+    id: 5,
+    noms: 'Doddy Matabaro',
+    email: 'Doddy Matabaro@rootech-drc.com',type:"Visite personnel",description:"Pour visite le parc"
+  },
+  {
+    id: 6,
+    noms: 'Emmanuel',
+    email: 'Doddy Matabaro@rootech-drc.com',type:"Visite personnel",description:"Pour visite le parc"
+  },]

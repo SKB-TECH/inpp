@@ -9,8 +9,13 @@ import {
 } from "../components/pages/home/elements";
 import Footer from "../components/layouts/footer";
 import Head from "next/head";
- 
+import { recupereStorage,ClearStorage} from '@/functions';
+import { useRouter } from 'next/router';
+
+
+
 const Home = () => {
+    
     return (
         <React.Fragment>
             <Head>
