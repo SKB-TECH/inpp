@@ -38,7 +38,7 @@ const Oeuvres = () => {
       key: 'action',
       render: (text, recorditem, index) => (
           <Space size="middle">
-              <Button href={'#'} className={recorditem?.status ?`text-green-500`:`text-yellow-500`} onClick={() => {
+              <Button href={'#'} className={recorditem?.status ?`text-green-500`:`text-yellow-400`} onClick={() => {
                   Valide(recorditem.idvisite);
               }}>
                   {recorditem?.status ?"Passee":"Validee cette visite" }
