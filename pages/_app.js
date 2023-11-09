@@ -6,16 +6,16 @@ import "../styles/loader.css"
 import "../styles/styles.css"
 import {SiteLayout} from "../layouts";
 import 'react-toastify/dist/ReactToastify.css';
-import {ToastContainer} from "react-toastify";
-import {IntlProviderWrapper} from "../context/Internationalization";
+import { ContextProvider } from "@/context/contextProvider";
 
 export default function App({Component, pageProps}) {
     return (
-        <IntlProviderWrapper>
+        <ContextProvider>
             <SiteLayout>
                 <Component {...pageProps} />
+               
             </SiteLayout>
-            <ToastContainer />
-        </IntlProviderWrapper>
+           
+        </ContextProvider>
     )
 }

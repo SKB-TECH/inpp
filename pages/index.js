@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <React.Fragment>
             <Head>
-                <title>Pnkb | Drc</title>
+                <title>Inpp| Drc</title>
                 <meta
                     name="description"
                     content="We are committed to putting our expertise at a process of digital transformation and technological innovation to the service of campanies for a common good."
@@ -27,7 +27,7 @@ const Home = () => {
                
                 <meta
                     property="og:title"
-                    content="Pnkb | Drc"
+                    content="Inpp | Rdc"
                 />
             
                 <meta
@@ -41,8 +41,8 @@ const Home = () => {
             <HomeSectionOne />
             <HomeSectionTwo />
             <HomeSection3 />
-            <HomeSection4 />
-            <Footer />
+            <HomeSection4 /> 
+            <Footer/>
         </React.Fragment>
     );
 }

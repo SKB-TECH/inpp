@@ -12,10 +12,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        blue:"#276c96",
-        orange:"#518b5c"
+        blue:"#034f98",
+        orange:"#034f98"
       }
     },
   },
   plugins: [],
 }
+                                                                                                                                                                                                                                                               

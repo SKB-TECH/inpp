@@ -1,7 +1,6 @@
 'use client'
 import React, { useContext } from "react";
 import Swiper from "react-id-swiper";
-import { IntlContext } from "../../../../context/Internationalization";
 import Image from "next/image";
 import gal1 from '../../../../public/gorille3.jpg'
 import gal2 from '../../../../public/gorille5.jpg'
@@ -25,7 +24,7 @@ const HomeCover = () => {
 
     };
 
-    const { messages } = useContext(IntlContext);
+
 
     return (
         <div className="section-contenair-last section-contenair-site-image bg-gray-950 d-flex justify-content-center align-items-center sm:h-[10rem] ">

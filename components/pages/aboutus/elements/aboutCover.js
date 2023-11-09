@@ -1,7 +1,7 @@
 import {Col, Container, Row} from "reactstrap";
 import React,{useContext} from "react";
 import Image from "next/image";
-import { IntlContext } from "../../../../context/Internationalization";
+import { IntlContext } from "../../../../context/contextProvider";
 const AboutCover = () => {
 
     const { messages} = useContext(IntlContext);

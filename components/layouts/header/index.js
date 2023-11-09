@@ -4,11 +4,6 @@ import ManuMobile from "./manuMobile";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import IntlDropdown from "../../elements/intlDropdown";
-import { IntlContext } from "../../../context/Internationalization";
-import { Facebook } from "react-feather";
-import { FaUser } from "react-icons/fa";
-import { User } from "react-feather";
 import { Button } from "antd";
 import AccountDrawer from "../../elements/user/login";
 import logo from '../../../public/assets/logos/logoblk.jpg';
@@ -53,7 +48,7 @@ const Header = () => {
     }
 
     const location = useRouter()
-    const { messages } = useContext(IntlContext);
+    // const { messages } = useContext(IntlContext);
     return (
         <>
             {
@@ -81,16 +76,16 @@ const Header = () => {
                             <div className="navigation d-none d-lg-flex d-xl-flex col-12 justify-content-end">
                                 <Link href="/" className={`${isScroll ? "linkItem-light" : "linkItem"} 
                             ${location.pathname === "/" ? "is-active" : ""}`}>
-                                    {messages['home']}
+                                    {"Acceuil"}
                                 </Link>
                                 <Link href="/aboutus" className={`${isScroll ? "linkItem-light" : "linkItem"} 
                             ${location.pathname === "/aboutus" ? "is-active" : ""}  `}>
-                                    {messages['about']}
+                                    {"Apropos"}
                                 </Link>
                                 <Button className="button-primary" onClick={()=>setopenForm(true)}>
                                     Connexion
                                 </Button>
-                                <IntlDropdown />
+                                {/* <IntlDropdown /> */}
                             </div>
                         </div>
                     </div>

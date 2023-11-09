@@ -4,7 +4,7 @@ import {IoSend} from "react-icons/io5";
 import  {localApi} from "../../../utils/axios";
 import {toast} from "react-toastify";
 import { Spinner} from "reactstrap";
-import { IntlContext } from "../../../context/Internationalization";
+import { IntlContext } from "../../../context/contextProvider";
 
 const ContactSectionOne= () => {
     const {messages}=React.useContext(IntlContext);

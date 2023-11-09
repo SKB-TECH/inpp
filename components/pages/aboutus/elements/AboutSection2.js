@@ -1,6 +1,6 @@
 import React,{useContext} from "react";
 import Image from "next/image";
-import { IntlContext } from "../../../../context/Internationalization";
+import { IntlContext } from "../../../../context/contextProvider";
 
 const AboutSection2= () => {
     const { messages } = useContext(IntlContext);
