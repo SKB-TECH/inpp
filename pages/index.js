@@ -35,13 +35,13 @@ const Home = () => {
                     content="We are committed to putting our expertise at a process of digital transformation and technological innovation to the service of campanies for a common good."
                 />
             </Head>
-            <div className="home-bg">
+            
+            <div className={"flex flex-col lg:px-14"}>
                 <HomeCover />
+                <HomeSectionOne />
+                <HomeSectionTwo />
+                <HomeSection3 />
             </div>
-            <HomeSectionOne />
-            <HomeSectionTwo />
-            <HomeSection3 />
-            <HomeSection4 /> 
             <Footer/>
         </React.Fragment>
     );

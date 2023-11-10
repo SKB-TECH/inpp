@@ -2,9 +2,9 @@ import React from 'react'
 import ButtonInfos from "../pages/home/elements/ButtonInfos"
 import { FiArrowUpRight } from 'react-icons/fi'
 
-const CardCategorie = ({image,title}) => {
+const CardCategorie = ({title}) => {
   return (
-    <section className="w-[94%] h-96 rounded-lg lg:w-96  bg-center bg-cover object-cover hover:object-scale-down hover:shadow-2xl" style={{backgroundImage: `url(${image})`,objectFit: 'cover',alignSelf:'center',width:`${100}`}}>
+    <section className="w-[94%] h-96 rounded-lg lg:w-56  bg-center bg-cover object-cover hover:object-scale-down hover:shadow-2xl" >
       <div className='text-center w-[100%] h-[100%] flex flex-col justify-end  p-10  '>
         <h1 className='text-center text-white hover:text-orange  mt-2 mb-2 hover:cursor-pointer text-4xl'>
             {title}
@@ -16,3 +16,5 @@ const CardCategorie = ({image,title}) => {
 }
 
 export default CardCategorie
+
+// style={{backgroundImage: `url(${image})`,objectFit: 'cover',alignSelf:'center',width:`${100}`}}

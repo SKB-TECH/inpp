@@ -2,9 +2,8 @@
 import React, { useContext } from "react";
 import Swiper from "react-id-swiper";
 import Image from "next/image";
-import gal1 from '../../../../public/gorille3.jpg'
-import gal2 from '../../../../public/gorille5.jpg'
-import gal3 from '../../../../public/gorille6.jpg'
+import fille from '../../../../public/fillerb.png';
+
 const HomeCover = () => {
 
     const params = {
@@ -27,23 +26,29 @@ const HomeCover = () => {
 
 
     return (
-        <div className="section-contenair-last section-contenair-site-image bg-gray-950 d-flex justify-content-center align-items-center sm:h-[10rem] ">
-            <div className="container-xl container-lg  ">
-                <div className="">
-                    <Swiper {...params}  >
-                        <div className="d-flex justify-content-center align-items-center flex-col lg:h-[34rem] h-96 w-screen">
-                            <Image src={gal1} width={1000} height={490} className="min-h-full w-full" alt="picturez"/>
-                        </div>
-                        <div className="d-flex justify-content-center align-items-center flex-col lg:h-[34rem] h-96 w-screen">
-                            <Image src={gal2} width={1000} height={490} className="min-h-full w-full" alt="picturez"/>
-                        </div>
-                        <div className="d-flex justify-content-center align-items-center flex-col lg:h-[34rem] h-96  w-screen">
-                            <Image src={gal3} width={1000} height={490} className="min-h-full w-full" alt="picturez"/>
-                        </div>
-                    </Swiper>
+        <section className="flex flex-col  lg:px-14 lg:flex-row gap-10 container lx:px-0 mx-auto w-full h-full justify-center items-center mt-24">
+                <div className={"flex flex-col justify-around gap-5 lg:w-[50%] w-[100%] h-full"}>
+                    <h3 className={"font-bold text-5xl"}>
+                        Prepare votre <span className="text-orange"> Avenir </span> Avec Assurance Ensemble avec <span className="text-orange">INPP</span>
+                    </h3>
+                    <p className={"text-lg"}>
+                        Avec des formations sur mesure et a votre rythme, <br/>Nous sommes capable a rednre votre avenir meilleure  
+
+                    </p>
+                    <button className={"h-10 w-full lg:w-44 bg-orange text-white rounded-lg p-2 hover:shadow-lg hover:cursor-pointer"}>
+                            Demander Un Stage
+                    </button>
                 </div>
-            </div>
-        </div>
+                <div className={"flex flex-col justify-around gap-5 lg:w-[50%] w-[100%] relative"}>
+                    <Image
+                        src={fille}
+                        width={800}
+                        height={800}
+                        alt="heor iamge"
+                        className={"object-fill"}
+                    />
+                </div>
+        </section>
     );
 }
 export default HomeCover

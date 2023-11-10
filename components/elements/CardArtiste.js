@@ -8,13 +8,13 @@ function Card_Artiste({names,domaine}) {
       className="flex flex-col gap-4 font-p_regular justify-center items-center w-80 h-96 rounded-lg hover:bg-gray-200 hover:shadow"
       data-aos="flip-right"
     >
-      <Image
+      {/* <Image
         src={icon}
         width={150}
         height={150}
         className="rounded-full border-vert_25 border-2"
         alt="picture"
-      />
+      /> */}
       <h1 className="font-bold text-lg text-center uppercase font-p_bold text-blue">
         {names}
       </h1>

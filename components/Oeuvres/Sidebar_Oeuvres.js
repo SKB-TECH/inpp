@@ -21,6 +21,10 @@ const SidebarOeuvre = () => {
                         <span className='mt-1'><BsFillGrid3X3GapFill size={20} /></span>
                         <Link href='/' className='ml-2 mt-1  hover:text-white'>Demandes</Link>
                     </li>
+                    <li className='flex m-2 cursor-pointer border-transparent hover:bg-orange hover:text-white border-2 p-2 rounded-xl'>
+                        <span className='mt-1'><BsFillGrid3X3GapFill size={20} /></span>
+                        <Link href='/' className='ml-2 mt-1  hover:text-white'>Affectations</Link>
+                    </li>
                     <li className='flex m-1 cursor-pointer border-transparent hover:bg-orange hover:text-white border-2 p-2 rounded-xl'>
                         <span className='mt-1'><FaUsersCog className='text-orange-600' size={20} /></span>
                         <Link href="/users" className='ml-2 mt-1 hover:text-white'>Utilisateurs</Link>

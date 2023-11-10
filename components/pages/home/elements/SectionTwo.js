@@ -46,12 +46,17 @@ const SectionTwo = () => {
   return (
       
         <div className='w-[100%] lg:w-[95%]  mt-20 '>
-          <div className='p-2 flex flex-col min-w-full lg:text-4xlmin-h-full mb-10 justify-around items-center text-2xl font-bold'>News of the month</div>
+          <div className='p-2 flex flex-col min-w-full lg:text-4xlmin-h-full mb-10 justify-around items-center'>
+            <h3>Temoignages</h3>
+            <p className="text-center text-[16px]  text-gray-400">
+              Les temoignages de quelques anciens qui sont deja place au sein des entreprises grace a nos formations de qualite
+            </p>
+          </div>
         <Slider {...settings}>
-         <Card_two images={'/gorille12.jpg'}/>
-         <Card_two images={'/gorille13.jpg'}/>
-         <Card_two images={'/gorille7.jpg'}/>
-         <Card_two images={'/gorille8.jpg'} />
+         <Card_two  nom={"Alliance "} ville={"Bukavu"} temoignage={"Grace a l'inpp je suis devenu utile dans la societe"} arr={[1,2,3,4]}/>
+         <Card_two  nom={"Ezekiel"} ville={"Goma"} temoignage={"Grace a l'inpp j'ai trouve un bon salaire au sein de l'entreprise"} arr={[1,2,3,4,5]}/>
+         <Card_two nom={"Chanceline"} ville={"Bukavu"} temoignage={"A cause de l'inpp je suis devenu gerant d'un grand hotel"} arr={[1,2,3,4]}/>
+         <Card_two nom={"Armela"} ville={"Goma"} temoignage={"Inpp pour moi c'est une source de bonheur"} arr={[1,2,3,4,5]}/>
         </Slider>
         
         </div>
