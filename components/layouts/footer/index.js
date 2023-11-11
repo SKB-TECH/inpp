@@ -34,6 +34,10 @@ const Footer=()=>{
                         <div className="d-flex flex-column ">
                             <Link href="#" target="_blank" className="footer_link"> +243 977423201</Link>
                             <Link href="mailto://danielclaudiustoica@yahoo.com" target="_blank" className="footer_link"> INPP-DRC</Link>
+                        
+                            <button className={"h-10 w-full lg:w-44 bg-orange text-white rounded-lg p-2 hover:shadow-lg hover:cursor-pointer"}>
+                            Demander Un Stage
+                    </button>
                         </div>
                     </div>
 

@@ -52,11 +52,11 @@ const SectionTwo = () => {
               Les temoignages de quelques anciens qui sont deja place au sein des entreprises grace a nos formations de qualite
             </p>
           </div>
-        <Slider {...settings}>
+        <Slider {...settings} className="gap-14">
          <Card_two  nom={"Alliance "} ville={"Bukavu"} temoignage={"Grace a l'inpp je suis devenu utile dans la societe"} arr={[1,2,3,4]}/>
          <Card_two  nom={"Ezekiel"} ville={"Goma"} temoignage={"Grace a l'inpp j'ai trouve un bon salaire au sein de l'entreprise"} arr={[1,2,3,4,5]}/>
          <Card_two nom={"Chanceline"} ville={"Bukavu"} temoignage={"A cause de l'inpp je suis devenu gerant d'un grand hotel"} arr={[1,2,3,4]}/>
-         <Card_two nom={"Armela"} ville={"Goma"} temoignage={"Inpp pour moi c'est une source de bonheur"} arr={[1,2,3,4,5]}/>
+         {/* <Card_two nom={"Armela"} ville={"Goma"} temoignage={"Inpp pour moi c'est une source de bonheur"} arr={[1,2,3,4,5]}/> */}
         </Slider>
         
         </div>

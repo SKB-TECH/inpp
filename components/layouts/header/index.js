@@ -10,7 +10,7 @@ import logo from '../../../public/assets/logos/logoblk.jpg';
 import ConnexionForm from "@/components/elements/ConnexionForm";
 
 const Header = () => {
-
+    const [openS, setOpenS]=useState(false);
     const [openAccount, setOpenAccount] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
     const [openSearch, setOpenSearch] = useState(false);
@@ -63,12 +63,12 @@ const Header = () => {
                             <div className="logo-container">
                                 <Link href={"/"} className="logo-a">
                                     <Image
-                                        src={logo}
-                                        alt="cover"
+                                        src={'/inpplogo.jpg'}
+                                        alt="fill"
                                         className="logo-image"
                                         width={700}
                                         height={700}
-                                        />
+                                    />
                                 </Link>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const Header = () => {
                             ${location.pathname === "/aboutus" ? "is-active" : ""}  `}>
                                     {"Apropos"}
                                 </Link>
-                                <Button className="button-primary" onClick={()=>setopenForm(true)}>
+                                <Button className="h-10 w-32 bg-orange text-white " onClick={()=>setopenForm(true)}>
                                     Connexion
                                 </Button>
                                 {/* <IntlDropdown /> */}
@@ -92,6 +92,7 @@ const Header = () => {
                 </div>
             </div>
             <ConnexionForm opens={openForm}  setOpens={setopenForm}/>
+
         </>
     )
 }

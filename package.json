@@ -25,6 +25,7 @@
     "@svgr/webpack": "^6.5.1",
     "animate.css": "^4.1.1",
     "antd": "^5.7.3",
+    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "cities.json": "^1.1.22",

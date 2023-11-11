@@ -3,9 +3,11 @@ import React, { useContext } from "react";
 import Swiper from "react-id-swiper";
 import Image from "next/image";
 import fille from '../../../../public/fillerb.png';
+import DemandeForm from "@/components/elements/demandeForm";
+
 
 const HomeCover = () => {
-
+    const [open,setOpen]=React.useState(false)
     const params = {
         slidesPerView: 1,
         spaceBetween: 1,
@@ -35,7 +37,7 @@ const HomeCover = () => {
                         Avec des formations sur mesure et a votre rythme, <br/>Nous sommes capable a rednre votre avenir meilleure  
 
                     </p>
-                    <button className={"h-10 w-full lg:w-44 bg-orange text-white rounded-lg p-2 hover:shadow-lg hover:cursor-pointer"}>
+                    <button className={"h-10 w-full lg:w-44 bg-orange text-white rounded-lg p-2 hover:shadow-lg hover:cursor-pointer"} onClick={()=>setOpen(true)}>
                             Demander Un Stage
                     </button>
                 </div>
@@ -48,6 +50,7 @@ const HomeCover = () => {
                         className={"object-fill"}
                     />
                 </div>
+                <DemandeForm opens={open} setOpens={setOpen}/>
         </section>
     );
 }

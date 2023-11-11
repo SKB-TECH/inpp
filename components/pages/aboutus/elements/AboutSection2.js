@@ -1,20 +1,31 @@
-import React,{useContext} from "react";
+import React from "react";
 import Image from "next/image";
-import { IntlContext } from "../../../../context/contextProvider";
+import {objectif }from '@/utils/data';
+import { Timeline } from 'antd';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const AboutSection2= () => {
-    const { messages } = useContext(IntlContext);
+    React.useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: "ease-in-sine",
+            delay: 100,
+          });
+      }, [])
 return (
-    <div className="section-contenair section-contenair-white  mt-0 mt-lg-5 mt-xl-5 ">
-        <div className="container-xl container-lg border-top">
+    <div data-aos="fade-down" className="section-contenair section-contenair-white  mt-0 mt-lg-5 mt-xl-5 ">
+        <div className="container-xl container-lg border-top mt-14">
             <div className="row p-3 align-items-center justify-content-center">
-
                 <div className="col-12 pt-3 pt-lg-0 pt-xl-0 col-lg-6 col-xl-6 align-items-md-end justify-content-md-center d-flex d-lg-none d-xl-none">
                     <div className="image-container-2">
                         <Image
                             placeholder="blur"
-                            blurDataURL="/gal5.jpg"
-                            src="/gal5.jpg"
+                            blurDataURL="/filleInpp.jpg"
+                            src="/filleInpp.jpg"
                             alt="suppe"
                             className="img-fluid-site boreder-site image-2"
                             fill
@@ -23,19 +34,19 @@ return (
                 </div>
 
                 <div className="col-12 col-lg-6 col-xl-6 mt-5 mt-xl-0 mt-lg-0">
-                    <h4 className="text-site">
-                        Vision de PNKB
+                    <h4 className="text-site mb-5">
+                       Nos  Missions
                     </h4>
                     <p className="text-justify text-site2">
-                    Développer un nouveau paradigme et de transformer un lourd passé d’injustices à l’encontre des peuples indigènes en un modèle de conservation efficace basé sur les droits humains
+                            <Timeline items={objectif}/>
                     </p>
                 </div>
-                <div className="col-12 pt-3 pt-lg-0 pt-xl-0 col-lg-6 col-xl-6 align-items-md-end justify-content-md-center d-none d-xl-flex d-lg-flex ">
+                <div data-aos="fade-left" className="col-12 pt-3 pt-lg-0 pt-xl-0 col-lg-6 col-xl-6 align-items-md-end justify-content-md-center d-none d-xl-flex d-lg-flex ">
                     <div className="image-container-2">
                         <Image
                             placeholder="blur"
-                            blurDataURL="/gorille6.jpg"
-                            src="/gorille6.jpg"
+                            blurDataURL="/mission.jpg"
+                            src="/mission.jpg"
                             alt="suppe"
                             className="img-fluid-site boreder-site image-2"
                             fill

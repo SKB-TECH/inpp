@@ -11,7 +11,9 @@ function SectionOne() {
       <h3>Nos Formations</h3>
       <div>
         <p className={"text-center text-[16px]"}>
-          Nous vous offrons une gamme de formations sur plusieurs domaines <br/> Avec l'accompagnement des nos specialistes en matieres pour vous guider dans la pratique 
+        L’INPP propose deux types de formation basés sur les compétences technique et scientifique pour relever les défis d’aujourd’hui et demain :
+
+S’adresse aux personnes sans emploi, jeunes sortis du système scolaire, population vulnérables ou aux personnes en reconversion professionnelle pour apprendre un METIER et initiation à la création d’entreprise.
         </p>
       </div>
       <div className={"flex flex-col lg:flex-row gap-20 justify-between  w-full h-full"}>
