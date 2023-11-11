@@ -1,5 +1,5 @@
-import React, { useContext, createContext, useState } from 'react';
-
+import React, { useContext, createContext, useState, useEffect } from 'react';
+import axios from 'axios'
 const StateContext = createContext();
 
 
@@ -23,7 +23,7 @@ export const ContextProvider = ({ children }) => {
     setAffectationData(data)
   }
 
-  
+
   return (
     <StateContext.Provider
       // eslint-disable-next-line react/jsx-no-constructed-context-values

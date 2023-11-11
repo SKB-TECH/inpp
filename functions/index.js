@@ -1,4 +1,5 @@
 import axios from "axios";
+
 export const stockageData = (cle,data) => {
     if (typeof window !== 'undefined') {
         localStorage.setItem(cle, JSON.stringify(data))
@@ -36,7 +37,7 @@ export const recupereStorage = (cle) => {
 
 export const login=async(datas)=>{
         try {
-            const BASIC_URL = String(process.env.NEXT_PUBLIC_BASE_URL);
+            const BASIC_URL = String(process.env.NEXT_PUBLIC_URL);
             const reponse = await axios.post(
                 `${BASIC_URL}compte/user/login`, datas
             );

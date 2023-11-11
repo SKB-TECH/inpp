@@ -3,14 +3,26 @@ import Image from 'next/image'
 import {AiFillStar,AiOutlineStar,AiFillHeart,AiFillEye} from 'react-icons/ai'; 
 import DemandeForm from './demandeForm';
 import photo from '../../public/iconphoto.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 export default function Card_two({arr, prof, ville, nom,temoignage}) { 
+  React.useEffect(() => {
+    AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+        delay: 100,
+      });
+  }, [])
+
+
   const [open,setOpen]=React.useState(false)
   return (
-    <div className='card'>
+    <div data-aos="flip-left" className='card'>
         <div className='flex flex-row justify-center items-center w-full  rounded-full h-52'>
           <Image src={photo} alt={'picture'} width={300} height={200} className={'w-full h-full object-fill'}/>
         </div>

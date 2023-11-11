@@ -6,7 +6,7 @@ import { useRouter, useMemo } from 'next/router';
 import dynamic from "next/dynamic";
 import "react-quill/dist/quill.snow.css";
 import { ecole } from '@/utils/data';
-
+import toast, { Toaster } from 'react-hot-toast';
 
 const modules = {
     toolbar: [
@@ -46,11 +46,13 @@ const formats = [
 ]
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 const DemandeForm= ({opens,setOpens}) => {
-    // const dispatch = useDispatch<AppDispatch>();
-   
     const [demandeInput,setDemandeInput]=useState({
     email:"",
-    type:"",objectif:"",noms:"",dates:""
+    noms:"",
+    dates:"", 
+    description:"",
+    institution:"",
+
 }); const {TextArea} = Input;
 
 
@@ -63,6 +65,40 @@ function onSelectData(data, dateString) {
     New_visite(demandeInput)
     setOpens(false)
 }
+
+const onChange=(value)=>{
+    setDemandeInput({...demandeInput,description:value})
+}
+
+const notice=()=>{
+    toast.error("Assurez-vous d'avoir rempli tout les champs !!",
+    {duration: 2000,
+    position: 'top-right'}
+    )
+
+  }
+  
+const envoyer=async()=>{
+    if(demandeInput.noms==="" || demandeInput.email===""|| demandeInput.description===""|| demandeInput.dates===""|| demandeInput.institution==="" ){
+      notice()
+    }
+    else{
+        try {
+            const result=await toast.promise(axios.post(`${process.env.NEXT_PUBLIC_URL}demande/new_demande`,demandeInput,{
+                headers: {"Content-type": "application/json; charset=UTF-8"}
+            }),{
+              loading:"Vueillez Patienter ..",
+              success:"Demande envoyee avec success !!",
+              error: "Erreur Server !!"
+            })
+            
+          } catch (error) {
+            console.log(error)
+          }
+    }
+    
+    setOpens(false)
+  }
   return (
     <>
       <Modal
@@ -76,7 +112,7 @@ function onSelectData(data, dateString) {
             size="large"
             // options={jobs}
             className="mb-1 w-[96%] h-10 bg-orange text-white mt-2 font-bold rounded-lg"
-            placeholder="Post" onClick={sendDemande}
+            placeholder="Post" onClick={envoyer}
         >Envoyer Ma demande</button>
 
             </div>
@@ -124,7 +160,7 @@ function onSelectData(data, dateString) {
                 modules={modules}
                 formats={formats}
                 theme="snow"
-                // onChange={onChange}
+                onChange={onChange}
                 placeholder="rediger votre lettre ici ...."
                 className='h-full mb-5'
                 />
@@ -135,10 +171,8 @@ function onSelectData(data, dateString) {
           <span className="text-gray-600 ">{"La date de votre stage"}</span>
           <DatePicker format={dateFormat} size={"large"} className={"w-full"} onChange={onSelectData}/>
       </Form.Item>
-         {/* <Form.Item name={'price'} className={"mt-1"}>
-          
-      </Form.Item> */}
-  </Form>
+        
+    </Form>
       </Modal>
     </>
   );

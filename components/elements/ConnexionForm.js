@@ -4,13 +4,13 @@ import {login} from '../../functions/index';
 import { recupereStorage,ClearStorage,stockageData } from '../../functions/index';
 import { useRouter } from 'next/router';
 import axios from 'axios'
-import { Toaster } from 'react-hot-toast';
 import {toastOption} from '../../utils/toastOption.js'
-import { toast } from 'react-toastify';
+import toast, { Toaster } from 'react-hot-toast';
 import { useStateContext } from '@/context/contextProvider';
 
 const ConnexionForm= ({opens,setOpens}) => {
   const {setUser}=useStateContext();
+  const [Loading,setLoading]=useState(false);
   const router=useRouter()
   const valide=recupereStorage('islog');
   const [agentInput,setAgentInput]=useState({
@@ -18,30 +18,44 @@ const ConnexionForm= ({opens,setOpens}) => {
     password:"",
 }); 
 
-const auth=async()=>{
-  try {
-    const BASIC_URL = String(process.env.NEXT_PUBLIC_BASE_URL);
-    const reponse = await toast.promise(
-      axios.post(`${BASIC_URL}compte/user/login`, agentInput,{
-        headers:{
-          'Accept': 'application/json'
-      }
-    },toastOption)
-    )
-    const is=true;
-    if( reponse.data.success) {
-      router.push("/oeuvres")
-      setOpens(false)
-      stockageData('islog',true)
-    }
-    else{
-        stockageData('isExist',!is)
-    }
-    return reponse.data;
-} catch (error) {
-    console.log(error)
+const notice=()=>{
+  toast.error("Assurez-vous d'avoir rempli tout les champs !!",
+  {duration: 2000,
+  position: 'top-right'}
+  )
+
+  Loading &&  toast.loading('Vueillez Patiente...');
 }
-}; 
+
+
+const auth=async()=>{
+  if(agentInput.email==="" || agentInput.password==""){
+    notice()
+  }
+  
+  try {
+    const result=await toast.promise(axios.post(`${process.env.NEXT_PUBLIC_URL}compte/user/login`,agentInput,{
+        headers: {"Content-type": "application/json; charset=UTF-8"}
+    }),{
+      loading:"Vueillez Patienter ..",
+      success:"Connexion reussie ",
+      error: "Erreur Server !!"
+    })
+  
+    result.status===201 && router.push("/oeuvres");
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+
+React.useEffect(()=>{
+  const isE=recupereStorage("isExist");
+  isE && router.push("/oeuvres");
+});
+
+
+
   return (
     <>
       <Modal
@@ -64,8 +78,9 @@ const auth=async()=>{
                 <Input  className="w-full"  placeholder="Votre mot de passe" size={"large"} onChange={(e)=>setAgentInput({...agentInput,password:e.target.value})}/>
             </Form.Item>
         </Form>
-        <Toaster/>
+      
       </Modal>
+      <Toaster/>
     </>
   );
 };

@@ -1,10 +1,22 @@
 import React from 'react'
 import ButtonInfos from "../pages/home/elements/ButtonInfos"
 import { FiArrowUpRight } from 'react-icons/fi'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const CardOne = ({description,title,icon,color,bgcolor}) => {
+
+  React.useEffect(() => {
+    AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+        delay: 100,
+      });
+  }, [])
   return (
-    <section className="w-[94%] h-96 rounded-lg lg:w-72 border border-gray-400  hover:drop-shadow-lg " >
+    <section data-aos="flip-up" className="w-[94%] h-96 rounded-lg lg:w-72 border border-gray-400  hover:drop-shadow-lg " >
       <div className='text-center w-[100%] h-[100%] flex flex-col justify-center  p-10  items-center '>
       <button
                   type="button"

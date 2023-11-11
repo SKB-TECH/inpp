@@ -4,9 +4,22 @@ import Swiper from "react-id-swiper";
 import Image from "next/image";
 import fille from '../../../../public/fillerb.png';
 import DemandeForm from "@/components/elements/demandeForm";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HomeCover = () => {
+    React.useEffect(() => {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: "ease-in-sine",
+            delay: 100,
+          });
+      }, [])
+
+
+
+
     const [open,setOpen]=React.useState(false)
     const params = {
         slidesPerView: 1,
@@ -29,7 +42,7 @@ const HomeCover = () => {
 
     return (
         <section className="flex flex-col  lg:px-14 lg:flex-row gap-10 container lx:px-0 mx-auto w-full h-full justify-center items-center mt-24">
-                <div className={"flex flex-col justify-around gap-5 lg:w-[50%] w-[100%] h-full"}>
+                <div  data-aos="zoom-in-down" className={"flex flex-col justify-around gap-5 lg:w-[50%] w-[100%] h-full"}>
                     <h3 className={"font-bold text-5xl"}>
                         Prepare votre <span className="text-orange"> Avenir </span> Avec Assurance Ensemble avec <span className="text-orange">INPP</span>
                     </h3>
@@ -41,7 +54,7 @@ const HomeCover = () => {
                             Demander Un Stage
                     </button>
                 </div>
-                <div className={"flex flex-col justify-around gap-5 lg:w-[50%] w-[100%] relative"}>
+                <div data-aos="zoom-in-down"  className={"flex flex-col justify-around gap-5 lg:w-[50%] w-[100%] relative"}>
                     <Image
                         src={fille}
                         width={800}
