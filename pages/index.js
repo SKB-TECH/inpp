@@ -36,7 +36,7 @@ const Home = () => {
                 />
             </Head>
             
-            <div className={"flex flex-col lg:px-14 px-0"}>
+            <div className={"flex flex-col justify-around items-center lg:px-14 px-0"}>
                 <HomeCover />
                 <HomeSectionOne />
                 <HomeSectionTwo />

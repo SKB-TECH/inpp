@@ -14,7 +14,7 @@ const Section3 = () => {
       });
   }, [])
   return (
-    <section className='flex flex-col lg:flex-row justify-center items-center  mt-12 min-h-full min-w-full lg:p-20'>
+    <section className='flex flex-col lg:flex-row justify-center items-center  mt-12 min-h-full min-w-full lg:p-20 p-0'>
         <div  data-aos="fade-right" className='w-[98%] h-[30rem] lg:w-1/2 bg-white flex flex-col p-2  lg:p-5 gap-10'>
           <h1 className="text-xl lg:text-left font-bold lg:text-4xl text-center">INPP| Drc </h1>
           <p className="text-gray-500 text-2xl text-justify lg:p-5 p-2">
