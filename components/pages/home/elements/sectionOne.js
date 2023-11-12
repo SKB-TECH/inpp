@@ -16,7 +16,7 @@ function SectionOne() {
 S’adresse aux personnes sans emploi, jeunes sortis du système scolaire, population vulnérables ou aux personnes en reconversion professionnelle pour apprendre un METIER et initiation à la création d’entreprise.
         </p>
       </div>
-      <div className={"flex flex-col lg:flex-row gap-20 justify-between  w-full h-full"}>
+      <div className={"flex flex-col lg:flex-row gap-20 justify-between items-center  w-full h-full"}>
             {
               TaskData.map((item,index)=>(
                 <CardOne  title={item.title} icon={item.icon} color={item.iconColor} bgcolor={item.iconBg} description={item.description}/>
