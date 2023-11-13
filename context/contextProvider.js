@@ -6,7 +6,7 @@ const StateContext = createContext();
 export const ContextProvider = ({ children }) => {
   const [userData, setUserData] = useState([]);
   const [demandeData, setDemandeData] = useState([]);
-  const [affctationData, setAffectationData] = useState([]);
+  const [affectationData, setAffectationData] = useState([]);
 
   // set user data on connexion;
   const setUser = (data) => {
@@ -31,7 +31,7 @@ export const ContextProvider = ({ children }) => {
           userData,
           setUserData,
           setUser,
-          affctationData,
+          affectationData,
           setAffectationData,
           setAffectation,
           demandeData,
